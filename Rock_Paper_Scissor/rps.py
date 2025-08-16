@@ -18,11 +18,11 @@ class RockPaperScissors:
         self.score_label.pack(pady=10)
         
         # Game buttons
-        tk.Button(self.window, text="🪨 Rock", width=15, height=2, 
+        tk.Button(self.window, text=" Rock", width=15, height=2, 
                  font=('Arial', 12), command=lambda: self.play('Rock')).pack(pady=5)
-        tk.Button(self.window, text="📄 Paper", width=15, height=2, 
+        tk.Button(self.window, text=" Paper", width=15, height=2, 
                  font=('Arial', 12), command=lambda: self.play('Paper')).pack(pady=5)
-        tk.Button(self.window, text="✂️ Scissors", width=15, height=2, 
+        tk.Button(self.window, text=" Scissors", width=15, height=2, 
                  font=('Arial', 12), command=lambda: self.play('Scissors')).pack(pady=5)
         
         # Result display
@@ -31,7 +31,7 @@ class RockPaperScissors:
         self.result_label.pack()
         
         # Reset button
-        tk.Button(self.window, text="🔄 Reset Score", font=('Arial', 10),
+        tk.Button(self.window, text=" Reset Score", font=('Arial', 10),
                  command=self.reset_score).pack(pady=10)
     
     def decide_winner(self, user_choice, computer_choice):
